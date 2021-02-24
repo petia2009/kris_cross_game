@@ -1,0 +1,19 @@
+div#title {
+    text-align: center;
+}
+
+button#play {
+    position: relative;
+    height: 100px;
+    width: 175px;
+    font-size: 200%;
+    left: 40%;
+
+    background: cyan;
+    color: white;
+
+    border: 0;
+    -moz-box-shadow: 5px 5px 5px 5px darkcyan;
+    -webkit-box-shadow: 5px 5px 5px 5px darkcyan;
+    box-shadow: 5px 5px 5px 5px darkcyan;
+}
