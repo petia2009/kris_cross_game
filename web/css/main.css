@@ -1,19 +1,39 @@
-div#title {
+div.title {
     text-align: center;
 }
 
-button#play {
+form.form {
+    position: relative;
+    left: 42%;
+}
+
+.play {
     position: relative;
     height: 100px;
     width: 175px;
     font-size: 200%;
-    left: 40%;
 
-    background: cyan;
+    background: darkcyan;
     color: white;
 
-    border: 0;
-    -moz-box-shadow: 5px 5px 5px 5px darkcyan;
-    -webkit-box-shadow: 5px 5px 5px 5px darkcyan;
-    box-shadow: 5px 5px 5px 5px darkcyan;
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+.username {
+    position: relative;
+    height: 50px;
+    width: 450px;
+    left: -10%;
+    font-size: 30px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-width: 3px;
+    border-style: outset;
+    border-radius: 10px;
+}
+
+legend {
+    text-align: center;
+    font-size: 20px;
 }

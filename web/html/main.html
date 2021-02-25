@@ -6,10 +6,18 @@
     <link href="../css/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<div id="title">
+<div class="title">
     <h1>Крестики-Нолики</h1>
-    <p>Нажмите кнопку "ИГРАТЬ" чтобы найти противника(пока не работает)</p>
-</div><br /><br />
-<button id="play"><a>ИГРАТЬ</a></button>
+</div>
+<fieldset><br>
+    <legend>Введите имя и нажмите Играть</legend>
+    <form action="main.html" method="get" class="form">
+        <label>
+            <input type="text" name="username" maxlength="19" required="required" class="username">
+        </label>
+        <br><br>
+        <input type="submit" name="play" class="play" value="ИГРАТЬ">
+    </form>
+</fieldset>
 </body>
 </html>
