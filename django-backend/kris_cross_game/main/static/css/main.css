@@ -19,6 +19,21 @@ fieldset {
     border-radius: 50px;
 }
 
+.decoration_img {
+    position: absolute;
+    height: 175px;
+    width: 175px;
+    top: 125px;
+}
+
+.left_img {
+    left: 150px;
+}
+
+.right_img {
+    right: 150px;
+}
+
 form.form {
     position: relative;
     left: 42%;

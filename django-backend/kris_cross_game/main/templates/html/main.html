@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Крестики Нолики</title>
-    <link href="../css/main.css" type="text/css" rel="stylesheet">
-</head>
-<body>
+{% extends "html/wrapper.html" %}
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static '/css/main.css' %}" type="text/css" />
+
 <div class="title">
     <h1>Крестики-Нолики</h1>
 </div>
 <fieldset><br>
+    {% load static %}
+    <img src="{% static 'imgs/main/field.png' %}" class="decoration_img left_img">
+    <img src="{% static 'imgs/main/field.png' %}" class="decoration_img right_img">
     <legend>ВВЕДИТЕ ИМЯ И НАЖМИТЕ ИГРАТЬ</legend>
     <form action="main.html" method="get" class="form">
         <label>
@@ -19,5 +20,5 @@
         <input type="submit" name="play" class="play" value="ИГРАТЬ">
     </form>
 </fieldset>
-</body>
-</html>
+
+{% endblock %}

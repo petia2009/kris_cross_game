@@ -128,3 +128,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/django-backend/kris_cross_game/kris_cross_game/token.txt
+/django-backend/kris_cross_game/token.txt
