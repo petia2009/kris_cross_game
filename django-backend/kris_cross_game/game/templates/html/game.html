@@ -1,0 +1,6 @@
+{% extends "html/wrapper.html" %}
+{% block content %}
+    {% for player in object_list %}
+        <a href="news/{{player.id}}">{{player.name}}</a>
+    {% endfor %}
+{% endblock %}
