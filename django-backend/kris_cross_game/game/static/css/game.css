@@ -1,0 +1,12 @@
+.player1 {
+    text-align: left;
+}
+
+.player2 {
+    text-align: right;
+}
+
+.topc {
+    position: relative;
+    top: 10%
+}

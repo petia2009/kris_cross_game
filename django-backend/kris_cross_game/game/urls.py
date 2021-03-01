@@ -1,10 +1,6 @@
 from django.urls import path, include
-from .models import Players
-from django.views.generic import ListView, DetailView
+from . import views
 
 urlpatterns = [
-    path(
-        '',
-        ListView.as_view(queryset=Players.objects.all().order_by("name"), template_name="html/game.html")
-    ),
+    path('', views.game, name="game"),
 ]
