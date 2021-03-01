@@ -2,7 +2,7 @@
 {% block content %}
 
 {% load static %}
-<link rel="stylesheet" href="{% static 'html/game.css' %}">
+<link rel="stylesheet" href="{% static '/css/game.css' %}" type="text/css">
 
 <div class="player1">
     <h3>ВЫ(player001)</h3>
@@ -14,15 +14,15 @@
     <hr>
 </div>
 <div class="field">
-    <div class="c1 botc">X</div>
-    <div class="c2 botc">X</div>
-    <div class="c3 botc">X</div>
-    <div class="c4 midc">X</div>
-    <div class="c5 midc">X</div>
-    <div class="c6 midc">X</div>
-    <div class="c7 topc">X</div>
-    <div class="c8 topc">X</div>
-    <div class="c9 topc">X</div>
+    <div class="c1 topc">t</div>
+    <div class="c2 topc">t</div>
+    <div class="c3 topc">t</div>
+    <div class="c4 midc">m</div>
+    <div class="c5 midc">m</div>
+    <div class="c6 midc">m</div>
+    <div class="c7 botc">b</div>
+    <div class="c8 botc">b</div>
+    <div class="c9 botc">b</div>
 </div>
 
     {% for player in list_players %}

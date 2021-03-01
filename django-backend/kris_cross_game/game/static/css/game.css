@@ -1,12 +1,12 @@
-.player1 {
+.player1 h3 {
     text-align: left;
 }
 
-.player2 {
-    text-align: right;
+.player2 h3 {
+    right: 5px;
 }
 
 .topc {
     position: relative;
-    top: 10%
+    top: 20%;
 }
