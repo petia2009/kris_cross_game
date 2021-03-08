@@ -3,33 +3,34 @@
 
 {% load static %}
 <link rel="stylesheet" href="{% static '/css/game.css' %}" type="text/css">
-<script src="{% static 'js/game.js'%}"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 
 <div class="player1">
     <h2>ВЫ({{player1}})</h2>
-    <h3>Ожидание хода...</h3>
+    <h3 id="descr_player1">Ожидание хода...</h3>
 </div>
 <hr>
 <h1 id="VS">VS</h1>
 <div class="player2">
     <h2>player002</h2>
-    <h3>Cейчас не ваш ход</h3>
+    <h3 id="descr_player2">Cейчас не ваш ход</h3>
 </div>
+<script src="{% static 'js/game.js'%}"></script>
 <table class="field">
     <tr>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
+        <td onclick="move(this);"> </td>
+        <td onclick="move(this);"> </td>
+        <td onclick="move(this);"> </td>
     </tr>
     <tr>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
+        <td onclick="move(this);"> </td>
+        <td onclick="move(this);"> </td>
+        <td onclick="move(this);"> </td>
     </tr>
     <tr>
-        <td>X</td>
-        <td>X</td>
-        <td>X</td>
+        <td onclick="move(this);"> </td>
+        <td onclick="move(this);"> </td>
+        <td onclick="move(this);"> </td>
     </tr>
 </table>
 

@@ -18,7 +18,7 @@
     top: 65px;
     font-size: 25px;
     padding: 125px 50px 125px 50px;
-    border-right: 1px solid black;
+    /*border-right: 1px solid black;*/
 }
 
 .player2 h3 {
@@ -27,7 +27,7 @@
     top: 65px;
     font-size: 25px;
     padding: 125px 50px 125px 50px;
-    border-left: 1px solid black;
+    /*border-left: 1px solid black;*/
 }
 
 .field {
@@ -36,18 +36,23 @@
     left: 39%;
     empty-cells: show;
     border-collapse: collapse;
-    border: 2px solid white;
-    width: 250px;
-    height: 250px;
     padding: 10px;
+    border: 2px solid white;
 }
 
 td {
     border: 1px solid black;
-    padding: 5px;
-    margin: 0;
     text-align: center;
     font-size: 50px;
+    width: 83px;
+    height: 83px;
+}
+td:hover {
+    background-color: cyan;
+}
+
+td.not_free:hover {
+    background-color: red;
 }
 
 h1#VS {
