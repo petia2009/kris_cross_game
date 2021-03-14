@@ -5,8 +5,6 @@ let descr_player2 = 'Сейчас не ваш ход.';
 let descr_player1_html = document.getElementById("descr_player1");
 let descr_player2_html = document.getElementById("descr_player2");
 
-let css = '';
-
 function change_descrs() {
     descr_player1_html.innerHTML = descr_player1;
     descr_player2_html.innerHTML = descr_player2;
@@ -39,20 +37,4 @@ function move(td) {
         }
     }
 
-}
-
-/*function is_cell_free(td) {
-    if (td.innerHTML === ' ') {
-        return true;
-    } else {
-        return false;
-    }
-}*/
-
-function onmouseover_td(td) {
-    td.style.backgroundColor = "red"
-}
-
-function onmouseout_td(td) {
-    td.style.backgroundColor = "white"
 }
