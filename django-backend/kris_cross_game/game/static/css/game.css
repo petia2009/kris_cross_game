@@ -1,39 +1,10 @@
-.player1 h2 {
-    position: absolute;
-    left: 100px;
-    top: 10px;
-    font-size: 25px;
-}
-
-.player2 h2 {
-    position: absolute;
-    right: 100px;
-    top: 10px;
-    font-size: 25px;
-}
-
-.player1 h3 {
-    position: absolute;
-    left: 15px;
-    top: 65px;
-    font-size: 25px;
-    padding: 125px 50px 125px 50px;
-    /*border-right: 1px solid black;*/
-}
-
-.player2 h3 {
-    position: absolute;
-    right: 15px;
-    top: 65px;
-    font-size: 25px;
-    padding: 125px 50px 125px 50px;
-    /*border-left: 1px solid black;*/
+.content {
+    width: 100%;
+    height: 100%;
 }
 
 .field {
     position: absolute;
-    top: 100px;
-    left: 39%;
     empty-cells: show;
     border-collapse: collapse;
     padding: 10px;
@@ -51,12 +22,15 @@ td:hover {
     background-color: cyan;
 }
 
-td.not_free:hover {
+.not_free:hover {
     background-color: red;
 }
 
+.custom_btn:hover {
+    background-color: cyan;
+}
+
 h1#VS {
-    position: absolute;
     top: 0;
     left: 45%;
     font-size: 50px;
@@ -64,7 +38,15 @@ h1#VS {
 }
 
 hr {
-    position: absolute;
     top: 80px;
     width: 99%;
+}
+
+.custom_btn {
+    background-color: white;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
 }

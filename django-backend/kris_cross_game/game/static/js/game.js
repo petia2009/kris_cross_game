@@ -22,19 +22,24 @@ function change_move() {
     }
 }
 
-function move(td) {
-    if (!td.classList.contains("not_free")) {
-        if (whose_move === 'player1') {
-            td.innerHTML = 'X';
-            td.classList.add("not_free");
-            change_move();
-            change_descrs()
-        } else if (whose_move === 'player2') {
-            td.innerHTML = 'O';
-            td.classList.add("not_free");
-            change_move();
-            change_descrs()
-        }
-    }
+function move(td, coord) {
+
+    // var request = new XMLHttpRequest();
+    // request.open('GET', '?coords=' + coord, false);
+    // request.send();
+
+    // if (!td.classList.contains("not_free")) {
+    //     if (whose_move === 'player1') {
+    //         td.innerHTML = 'X';
+    //         td.classList.add("not_free");
+    //         change_move();
+    //         change_descrs()
+    //     } else if (whose_move === 'player2') {
+    //         td.innerHTML = 'O';
+    //         td.classList.add("not_free");
+    //         change_move();
+    //         change_descrs()
+    //     }
+    // }
 
 }
