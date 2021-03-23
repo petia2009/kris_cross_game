@@ -19,24 +19,24 @@
                 <form action="main" method="post">
                     {% csrf_token %}
                 <tr>
-                    <td onclick="move(this, '00')">{{field.0.0}}</td>
-                    <td onclick="move(this, '01')">{{field.0.1}}</td>
-                    <td onclick="move(this, '02')">{{field.0.2}}</td>
+                    <td><button class="custom_btn" name="coords" type="submit" value="00">{{field.0.0}}</button></td>
+                    <td><button class="custom_btn" name="coords" type="submit" value="01">{{field.0.1}}</button></td>
+                    <td><button class="custom_btn" name="coords" type="submit" value="02">{{field.0.2}}</button></td>
                 </tr>
                 <tr>
-                    <td onclick="move(this, '10')">{{field.1.0}}</td>
-                    <td onclick="move(this, '11')">{{field.1.1}}</td>
-                    <td onclick="move(this, '12')">{{field.1.2}}</td>
+                    <td><button class="custom_btn" name="coords" type="submit" value="10">{{field.1.0}}</button></td>
+                    <td><button class="custom_btn" name="coords" type="submit" value="11">{{field.1.1}}</button></td>
+                    <td><button class="custom_btn" name="coords" type="submit" value="12">{{field.1.2}}</button></td>
                 </tr>
                 <tr>
                     <td><button class="custom_btn" name="coords" type="submit" value="20">{{field.2.0}}</button></td>
-                    <td onclick="move(this, '21')">{{field.2.1}}</td>
-                    <td onclick="move(this, '22')">{{field.2.2}}</td>
+                    <td><button class="custom_btn" name="coords" type="submit" value="21">{{field.2.1}}</button></td>
+                    <td><button class="custom_btn" name="coords" type="submit" value="22">{{field.2.2}}</button></td>
                 </tr>
                 </form>
             </table>
         </td>
-        <td rowspan="2"><h6 id="descr_player2">Сейчас не ваш ход!</h6></td>
+        <td><h6 id="descr_player2">Сейчас не ваш ход!</h6></td>
     </tr>
 </table>
 <h1>{{coords}}</h1>

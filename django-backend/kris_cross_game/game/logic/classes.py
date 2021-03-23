@@ -12,8 +12,8 @@ class Game:
 class FieldXO:
     def __init__(self):
         self.__field__ = [
-            [' ', ' ', ' '],
-            [' ', ' ', ' '],
+            ['X', ' ', ' '],
+            ['X', ' ', ' '],
             ['X', ' ', ' ']
         ]
 
