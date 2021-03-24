@@ -13,25 +13,34 @@
     </tr>
     <tr>
         <td><h6 id="descr_player1">Ожидание хода...</h6></td>
-        <td class="field_cells">
+        <td>
             <table class="field">
 
-                <form action="main" method="post">
+                <form action="#" method="post">
                     {% csrf_token %}
                 <tr>
-                    <td class="cell"><button class="custom_btn" name="coords" type="submit" value="00">{{field.0.0}}</button></td>
-                    <td class="cell"><button class="custom_btn" name="coords" type="submit" value="01">{{field.0.1}}</button></td>
-                    <td class="cell"><button class="custom_btn" name="coords" type="submit" value="02">{{field.0.2}}</button></td>
+                    <td class="cell">
+                        <button class="custom_btn" name="coords" type="submit" value="0 0">{{field.0.0}}</button></td>
+                    <td class="cell">
+                        <button class="custom_btn" name="coords" type="submit" value="0 1">{{field.0.1}}</button></td>
+                    <td class="cell">
+                        <button class="custom_btn" name="coords" type="submit" value="0 2">{{field.0.2}}</button></td>
                 </tr>
                 <tr>
-                    <td class="cell"><button class="custom_btn" name="coords" type="submit" value="10">{{field.1.0}}</button></td>
-                    <td class="cell"><button class="custom_btn" name="coords" type="submit" value="11">{{field.1.1}}</button></td>
-                    <td class="cell"><button class="custom_btn" name="coords" type="submit" value="12">{{field.1.2}}</button></td>
+                    <td class="cell">
+                        <button class="custom_btn" name="coords" type="submit" value="1 0">{{field.1.0}}</button></td>
+                    <td class="cell">
+                        <button class="custom_btn" name="coords" type="submit" value="1 1">{{field.1.1}}</button></td>
+                    <td class="cell">
+                        <button class="custom_btn" name="coords" type="submit" value="1 2">{{field.1.2}}</button></td>
                 </tr>
                 <tr>
-                    <td class="cell"><button class="custom_btn" name="coords" type="submit" value="20">{{field.2.0}}</button></td>
-                    <td class="cell"><button class="custom_btn" name="coords" type="submit" value="21">{{field.2.1}}</button></td>
-                    <td class="cell"><button class="custom_btn" name="coords" type="submit" value="22">{{field.2.2}}</button></td>
+                    <td class="cell">
+                        <button class="custom_btn" name="coords" type="submit" value="2 0">{{field.2.0}}</button></td>
+                    <td class="cell">
+                        <button class="custom_btn" name="coords" type="submit" value="2 1">{{field.2.1}}</button></td>
+                    <td class="cell">
+                        <button class="custom_btn" name="coords" type="submit" value="2 2">{{field.2.2}}</button></td>
                 </tr>
                 </form>
             </table>
