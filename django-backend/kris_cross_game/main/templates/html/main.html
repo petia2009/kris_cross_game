@@ -16,8 +16,11 @@
     <form action="{% url 'game' %}" method="post" class="form">
         {% csrf_token %}
         <label>
-            <input type="text" name="username" maxlength="20" required="required" class="username" placeholder="Введите имя(до 20-ти символов)">
+            <input type="text" name="username" maxlength="20" required="required"
+                   class="username" placeholder="Введите имя(до 20-ти символов)"
+            >
         </label>
+        <input type="hidden" value="new_game" name="new_game">
         <br><br>
         <input type="submit" name="play" class="play" value="ИГРАТЬ">
     </form>

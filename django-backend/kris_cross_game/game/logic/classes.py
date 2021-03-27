@@ -3,10 +3,14 @@ import uuid
 
 class Game:
     def __init__(self):
-        self.game_id = uuid.uuid4()
+        self.__game_id__ = str(uuid.uuid4())
+        self.__field_class__ = FieldXO()
+
+    def get_field_class(self):
+        return self.__field_class__
 
     def get_game_id(self):
-        return self.game_id
+        return self.__game_id__
 
 
 class FieldXO:
@@ -19,9 +23,13 @@ class FieldXO:
         self.move_x = True
         self.move_y = False
 
-    def move(self, x_or_o, x, y):
-        self.__field__[y][x] = x_or_o
-        self.move_x, self.move_y = self.move_y, self.move_x
+    def is_this_move_win(self, x_or_o, x, y):
+        if self.is_winner(self.get_whoose_move()):
+            return True
+        else:
+            self.__field__[y][x] = x_or_o
+            self.move_x, self.move_y = self.move_y, self.move_x
+            return False
 
     def get_whoose_move(self):
         if self.move_x:
