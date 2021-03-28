@@ -1,0 +1,31 @@
+<h6 style="position: absolute; margin-left: 10%">{{who_winner}}<br>выиграл!</h6>
+<table class="field" style="opacity: 0.3">
+
+    <form action="#" method="post">
+        {% csrf_token %}
+        <tr>
+            <td class="cell">
+                <button class="custom_btn" name="coords" type="submit" value="0 0">{{field.0.0}}</button></td>
+            <td class="cell">
+                <button class="custom_btn" name="coords" type="submit" value="0 1">{{field.0.1}}</button></td>
+            <td class="cell">
+                <button class="custom_btn" name="coords" type="submit" value="0 2">{{field.0.2}}</button></td>
+        </tr>
+        <tr>
+            <td class="cell">
+                <button class="custom_btn" name="coords" type="submit" value="1 0">{{field.1.0}}</button></td>
+            <td class="cell">
+                <button class="custom_btn" name="coords" type="submit" value="1 1">{{field.1.1}}</button></td>
+            <td class="cell">
+                <button class="custom_btn" name="coords" type="submit" value="1 2">{{field.1.2}}</button></td>
+        </tr>
+        <tr>
+            <td class="cell">
+                <button class="custom_btn" name="coords" type="submit" value="2 0">{{field.2.0}}</button></td>
+            <td class="cell">
+                <button class="custom_btn" name="coords" type="submit" value="2 1">{{field.2.1}}</button></td>
+            <td class="cell">
+                <button class="custom_btn" name="coords" type="submit" value="2 2">{{field.2.2}}</button></td>
+        </tr>
+    </form>
+</table>

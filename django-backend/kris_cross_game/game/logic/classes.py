@@ -24,10 +24,10 @@ class FieldXO:
         self.move_y = False
 
     def is_this_move_win(self, x_or_o, x, y):
+        self.__field__[y][x] = x_or_o
         if self.is_winner(self.get_whoose_move()):
             return True
         else:
-            self.__field__[y][x] = x_or_o
             self.move_x, self.move_y = self.move_y, self.move_x
             return False
 
